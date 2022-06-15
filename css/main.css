@@ -1,0 +1,62 @@
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+section{
+  border: 1px solid #999;
+  margin: 20px 0;
+  padding: 0;
+}
+.box{
+  width: 200px;
+  height: 200px;
+}
+.b1{
+  background-color: #80E1D4;
+}
+.b2{
+  background-color: #9696FF;
+}
+.b3{
+  background-color: #85E1F4;
+}
+.b4{
+  background-color: #E89380;
+}
+/******************************
+        CSS Transition
+******************************/
+.transition .b1{
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: .5s;
+}
+.transition .b1:hover{
+  width: 400px;
+  height: 300px;
+}
+.transition .b2{
+  transition: width 1s, height .5s;
+  transition-timing-function: ease-out;
+  transition-delay: .5s;
+}
+.transition .b2:hover{
+  width: 250px;
+  height: 250px;
+}
+.transition .b3{
+  transition: transform 1s cubic-bezier(.68,-0.34,.35,1.33);
+}
+.transition .b3:hover{
+  transform: rotate(80deg);
+}
+.transition .b4{
+  transition: all 1s ease-in;
+}
+.transition .b4:hover{
+  background-color: #CC80CC;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
